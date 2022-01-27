@@ -1,0 +1,56 @@
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.card{
+    /* display: flex; */
+    width: 100%;
+    margin: 2rem 2rem;
+    /* padding: 1rem 1rem; */
+}
+
+span{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.button{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.button .link{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 1rem;
+  border: 1px solid;
+  text-align: center;
+  color: white;
+  background: black;
+  border-radius: 5px;
+}
+
+.actions{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Form Styling */
+
+
+input{
+  width: 100%;
+}
+
+
+
