@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from "react";
-import Axios from "axios";
 import CustomerData from "./components/CustomerData";
 
 import {
   getCustomers,
-  getCustomerById,
   deleteCustomer,
-  updateCustomer,
 } from "./APICalls/coreapicalls";
 
 const App = () => {
   const [customers, setCustomers] = useState([]);
-  const [error, setError] = useState(false);
+  const [setError] = useState(false);
 
   const fetchCustomers =  () => {
     getCustomers().then((data) => {

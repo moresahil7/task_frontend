@@ -36,26 +36,26 @@ const Create = () => {
     <div className="m-5 d-flex justify-content-center">
       <form action="" onSubmit={(e) => onSubmission(e)}>
         <div className="">
-        <label className="form-label">
-          Name:
-          <input
-            className="form-control"
-            type="text"
-            name="name"
-            id=""
-            required
-            value={name}
-            onChange={(e) => handleChange(e)}
-          />
-        </label>
+          <label className="form-label">
+            Name:
+            <input
+              className="form-control"
+              type="text"
+              name="name"
+              id=""
+              required
+              value={name}
+              onChange={(e) => handleChange(e)}
+            />
+          </label>
         </div>
         <div className="mobile">
           <label className="form-label">
             Mobile:
             <input
-            width='100px'
-            className="form-control"
-            type="tel"
+              width="100px"
+              className="form-control"
+              type="tel"
               name="mobile"
               id=""
               required
@@ -68,7 +68,7 @@ const Create = () => {
           <label className="form-label">
             Age:
             <input
-            className="form-control"
+              className="form-control"
               type="age"
               name="age"
               id=""
@@ -79,7 +79,11 @@ const Create = () => {
           </label>
         </div>
         <div className="">
-          <input className="btn btn-secondary" type="submit" value="Add Customer" />
+          <input
+            className="btn btn-secondary"
+            type="submit"
+            value="Add Customer"
+          />
         </div>
       </form>
     </div>

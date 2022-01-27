@@ -1,5 +1,5 @@
 export const getCustomers = () => {
-  return fetch("http://localhost:8000/customer/", {
+  return fetch("https://crudintask.herokuapp.com/customer/", {
     method: "GET",
   })
     .then((response) => {
@@ -9,7 +9,7 @@ export const getCustomers = () => {
 };
 
 export const getCustomerById = (id) => {
-  return fetch(`http://localhost:8000/customer/${id}`, {
+  return fetch(`https://crudintask.herokuapp.com/customer/${id}`, {
     method: "GET",
   })
     .then((response) => {
@@ -19,7 +19,7 @@ export const getCustomerById = (id) => {
 };
 
 export const deleteCustomer = (id) => {
-  return fetch(`http://localhost:8000/customer/${id}/`, {
+  return fetch(`https://crudintask.herokuapp.com/customer/${id}/`, {
     method: "DELETE",
     headers: {
       Accept: "application/json",
@@ -32,7 +32,7 @@ export const deleteCustomer = (id) => {
 };
 
 export const createCustomer = (customer) => {
-  return fetch(`http://localhost:8000/customer/`,{
+  return fetch(`https://crudintask.herokuapp.com/customer/`,{
     method:"POST",
     headers:{
       Accept: "application/json",
@@ -50,7 +50,7 @@ export const createCustomer = (customer) => {
 }
 
 export const updateCustomer = (id,customer) => {
-  return fetch(`http://localhost:8000/customer/update/${id}/`, {
+  return fetch(`https://crudintask.herokuapp.com/customer/update/${id}/`, {
     method: "PUT",
     headers: {
       Accept: "application/json",
